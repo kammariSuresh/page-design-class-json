@@ -9,6 +9,7 @@
 .App-header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-bottom: lightgray solid ;
 }
 
@@ -18,7 +19,8 @@
 
 .header-list-items{
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 }
 li{
   list-style-type: none;
@@ -29,6 +31,16 @@ li{
 .main-title-card{
   background-image: linear-gradient(to right ,rgb(21, 129, 183),rgb(21, 129, 183),#a13fd6 );
   padding: 5%;
+}
+
+button{
+  height: 30px;
+  width: 100px;
+  border: none;
+
+}
+button:hover{
+color:#a13fd6
 }
 
 
@@ -49,6 +61,9 @@ img{
   background-color: gray;
 }
 
+.head1{
+  margin-right: 10px;
+}
 
 /* @keyframes App-logo-spin {
   from {

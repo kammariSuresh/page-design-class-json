@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react'
-// import axios from 'axios'
+import axios from 'axios'
 import './App.css';
 const classData = [
   {
@@ -67,12 +67,12 @@ function App() {
   }, [])
 
   const fetchClasses = async () =>{
-    // const response =  await  axios('class.json');
+    // const response =  await  axios('data/class.json');
     // // console.log(response)
-    // const responseData = response
+    // const responseData = await response.json()
     // // console.log(responseData)
     //   setData(responseData)
-      // console.log(data)
+    //   console.log(data)
 
       setData(classData)
   }
@@ -84,10 +84,10 @@ function App() {
       <header className="App-header">
           <p>Title</p>
           <div className="header-list-items">
-            <p>Home</p>
-            <p>About</p>
-            <p>Blog</p>
-            <p>Contact</p>
+            <p className='head1'>Home</p>
+            <p className='head1'>About</p>
+            <p className='head1'>Blog</p>
+            <p className='head1'>Contact</p>
             <button>Button</button>
           </div>
       </header>
